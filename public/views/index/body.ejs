@@ -40,9 +40,9 @@
 
             <div id="home" class="section"<% if(signin) { %> style="display:none;"<% } %>>
                 <div class="inner cover">
-                    <h1 class="cover-heading"><i class="fa fa-file-text"></i> CodiMD</h1>
+                    <img src="/gconfs.png" height="40" class="cover-heading" style="margin: 20px;">
                     <p class="lead">
-                        <%= __('Best way to write and share your knowledge in markdown.') %>
+                        <%= __('On s\'en bat les couilles.') %>
                     </p>
                     <% if (infoMessage && infoMessage.length > 0) { %>
                     <div class="alert alert-info" style="max-width: 400px; margin: 0 auto;"><%= infoMessage %></div>
@@ -55,10 +55,8 @@
                         <br>
                         <a type="button" class="btn btn-lg btn-success ui-signin" data-toggle="modal" data-target=".signin-modal" style="min-width: 200px;"><%= __('Sign In') %></a>
                     </span>
-                    <span class="ui-or"><%= __('or') %></span>
                     <% } %>
                     <span class="ui-signin">
-                        <a type="button" href="<%- serverURL %>/features" class="btn btn-lg btn-primary" style="min-width: 200px;"><%= __('Explore all features') %></a>
                         <br>
                         <br>
                         <img src="<%- serverURL %>/screenshot.png" class="screenshot ui-signin">
@@ -150,12 +148,6 @@
                         <option value="id">Bahasa Indonesia</option>
                         <option value="sr">српски</option>
                     </select>
-                    <p>
-                        <%- __('Powered by %s', '<a href="https://github.com/hackmdio/codimd">CodiMD</a>') %> | <a href="<%- serverURL %>/s/release-notes" target="_blank" rel="noopener"><%= __('Releases') %></a>| <a href="<%- sourceURL %>" target="_blank" rel="noopener"><%= __('Source Code') %></a><% if(privacyStatement) { %> | <a href="<%- serverURL %>/s/privacy" target="_blank" rel="noopener"><%= __('Privacy') %></a><% } %><% if(termsOfUse) { %> | <a href="<%- serverURL %>/s/terms-of-use" target="_blank" rel="noopener"><%= __('Terms of Use') %></a><% } %>
-                    </p>
-                    <h6 class="social-foot">
-                        <%- __('Follow us on %s and %s.', '<a href="https://github.com/hackmdio/CodiMD" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>, <a href="https://gitter.im/hackmdio/hackmd" target="_blank" rel="noopener"><i class="fa fa-comments"></i> Gitter</a>', '<a href="https://poeditor.com/join/project/q0nuPWyztp" target="_blank" rel="noopener"><i class="fa fa-globe"></i> POEditor</a>') %>
-                    </h6>
                 </div>
             </div>
         </div>

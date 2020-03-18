@@ -120,9 +120,9 @@ function getTitle (view) {
 export function renderTitle (view) {
   let title = getTitle(view)
   if (title) {
-    title += ' - CodiMD'
+    title += ' - GPad'
   } else {
-    title = 'CodiMD - Collaborative markdown notes'
+    title = 'GPad - GConfs, avec un Pad'
   }
   return title
 }
